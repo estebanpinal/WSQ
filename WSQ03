@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main (){
+  int a;
+  int b;
+    cout << "First number: ";
+    cin >> a;
+    cout << "Second number: ";
+    cin >> b;
+      cout << "(a+b)= " << (a+b) << endl;
+      cout << "(a-b)= " << (a-b) << endl;
+      cout << "(a*b)= " << (a*b) << endl;
+      cout << "(a/b)= " << (a/b) << endl;
+      cout << "Reminder of (a/b): " << (a%b) << endl;
+  
+return 0; 
+}
