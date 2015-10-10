@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+  long superpower(long a, long b)//
+    long superpower = 1;
+    int i = 0;
+    while(i < b)
+        superpower = superpower * a;
+        i++;
+  }
+  return superpower;
+  }
+  
+    void stars(int x){
+        int i = 0;
+        while( i <<"*";
+        i++;
+        }
+      cout << endl;
+      }
+      
+        int main(){
+          cout << superpower(3,4) << endl;
+          stars(5);
+  return 0;}
