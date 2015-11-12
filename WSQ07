@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  int a, b;
+  int c = 0;
+  cout << " Suma de los valores que nos diste: " << endl;
+  cout << "Numero bajo " << endl;
+  cin >> a;
+  cout << " Numero alto " << endl;
+  cin >> b;
+
+  while (a<=b) {
+    c = c + a;
+    a++;
+  }
+  cout << "La suma de: " << a; cout << " a " << b; cout << " es: "<< (a + c) << endl;
+  return 0;
+}
