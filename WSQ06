@@ -1,0 +1,45 @@
+#include <iostream>
+#include <ctime>
+#include <stdlib>
+using namespace std;
+
+int main(){
+  int x, y, i = 0;
+  char ans;
+  do{
+  srand(time (0));
+  x=rand()%100+1;
+cout <<"Elije un numero entrer 1 y 100: ";
+cin>>y;
+ while (y != x)
+ {
+  i = i + 1;
+    if (y<=0 || y>100) {
+    cout << endl;
+    cout << "el numero tiene que ser entre 1 y 100."<< endl;
+    }
+    if(y>x)
+    {
+      cout << endl;
+      cout << "Menos "<<endl;
+      cout << "Intentos: " << i <<endl;
+    }
+    if (y<x)
+    {
+     cout << endl;
+     cout << "Mas "<< endl;
+     cout << "Intentos: "<< i <<endl;
+    }
+    cout << "Intenta otra vez: ";
+    cin >> y;
+    cout << endl;
+}
+   if (y==x){
+    (i=i+1);
+    cout<<"Felicidades "<<i; cout<<"Intentos: "<<endl;
+    cout<<"El nuero era: "<<x <<endl;
+    }
+  }
+  while(ans=='y');
+  return 0;
+}
