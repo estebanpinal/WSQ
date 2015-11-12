@@ -1,0 +1,38 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int add(int a, int b)
+{
+  return a + b;
+}
+int sub(int a, int b)
+{
+  return a - b;
+}
+int product(int a, int b)
+{
+  return a * b;
+}
+int division(int a, int b)
+{
+  return a / b;
+}
+int reminder(int a, int b)
+{
+  return a % b;
+}
+
+int main ()
+{
+int a , b;
+cout << "introduce dos numeros: " << endl;
+cin >> a >> b;
+
+cout << "Suma: " << add(a , b) << endl;
+cout << "Resta: " << sub(a , b) << endl;
+cout << "Multiplicacion: " << product(a , b) << endl;
+cout << "Divicion: " << division(a , b) << endl;
+cout << "Residuo de la divicion: " << reminder(a , b) << endl;
+return 0;
+}
