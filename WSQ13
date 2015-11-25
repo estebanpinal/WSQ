@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+double BL(double n) {
+ double failure= 0.00001;
+ double a= n;
+ while((a - n/a) > failure) {
+ a = (a + n/a)/2;
+ cout<<"The intermediate result is " << a <<endl;
+ }
+ return a;
+}
+
+void newline(){
+  cout<<endl;
+}
+
+int main() {
+ double num;
+ cout<<"hola"<<endl;
+ newline();
+ cout<<"dame un numero "<<endl;
+ newline();
+ cin>>num;
+ double resultado = BL(num);
+ cout<<"The square root of "<<num<<" equals to "<<resultado<<endl;
+
+ return 0;
+}
