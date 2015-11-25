@@ -1,0 +1,39 @@
+#include <iostream> 
+using namespace std;
+
+void newline(){
+  cout<<endl;
+}
+
+int common(int primero, int segundo)
+{
+	if (primero==segundo)
+	{
+		return primero;
+	}
+	else if (primero>segundo)
+	{
+		return common(primero-segndo, segundo);
+	}
+	else
+	{
+		return common(primero, segundo-primero);
+	}
+}
+
+int main ()
+{
+	int a,b;
+  cout<<"hola "<<endl;
+  newline();
+  cout<<"primer numero"<<endl;
+  newline();
+	cin>>a;
+  newline();
+  cout<<"segundo numero "<<endl;
+  newline();
+  cin>>b;
+  newline();
+	cout<<"el maimo comun divisor es: "<<a<<" and "<<b<<" is "<<common(a,b)<<endl;
+	return 0;
+}
