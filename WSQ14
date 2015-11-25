@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+float euler(float b){
+float a;
+float R=0.0, Ref=0.0;
+
+float factorial =1;
+for (a=1; a<=b; x++){
+factorial= factorial*a;
+R=R+1/factorial;
+}
+Ref=R+1;
+return Ref;
+}
+
+void newline(){
+  cout<<endl;
+}
+
+int main(){
+float input;
+cout<<"hola"<<endl;
+newline();
+cout<<"dame un numero decimal "<<endl;
+newline();
+cin>>input;
+newline();
+float factorial= euler (input);
+cout<<"la cnstante es: "<<factorial<<endl;
+return 0;
+ }
